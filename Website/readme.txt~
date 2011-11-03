@@ -1,6 +1,6 @@
 This readme file is for the LJMU Holiday Request System website that has been created by Lee Robinson.
 
-There are 5 webpages called; home.html, index.html, new.html, edit.html and show.html
+There are 5 webpages called; index.html, requests.html, new.html, edit.html and show.html
 
 Each webpage contains navigation to all of the webpages. Each webpage contains alt tags for images. Each webpage has been commented as has the CSS file.
 
@@ -14,15 +14,15 @@ Each webpage has passed the w3c validation service. The CSS file has also passed
 
 Each webpage has access keys for navigation purposes which are as follows;
 
-home.html - l
-requests.html - i
+index.html - i 
+requests.html - r 
 new.html - n
 edit.html - e
 show.html - s
 
 The home, new and edit webpages also have forms that have access keys for the fields and they are as follows;
 
-home.html
+index.html
 
 username field - u
 password field - p
@@ -32,12 +32,12 @@ new.html
 
 amountofdays field - a
 startdate field - d
-returndate field - r
+returndate field - c
 add button - b
 
 edit.html
 
 amountofdays field - a
 startdate field - d
-returndate field - r
+returndate field - c
 edit button - b
