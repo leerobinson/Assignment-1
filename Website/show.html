@@ -2,53 +2,96 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>LJMU Holiday Request System</title>
-<link href="mystyles.css" rel="stylesheet" type="text/css">
+<title>LJMU Holiday Request System - Show Record</title>
+<link href="styles/mystyles.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
+
 <div id="container">
-  <div id="header"><img src="images/header.png" width="968" height="125" alt="Header"></div>
+
+  <div id="header"><img src="images/ljmuheader.png" width="968" height="125" alt="LJMUHeader" title="LJMU Holiday Request System header"></div>
+  
+  <!-- The header is a premade image using GIMP. It also has alt tags so that it identifies the area it takes up on the website and users know what will be there. -->
+  
   <div class="navigation">
 	<ul>
-	<li><a href="home.html" accesskey="l">Home</a></li>
-	<li><a href="index.html" accesskey="i">Requests</a></li>
-	<li><a href="new.html" accesskey="n">Add Request</a></li>
-	<li><a href="edit.html" accesskey="e">Edit Request</a></li>
-	<li><a href="show.html" accesskey="s">Show Request</a></li>
+	<li><a title= "Home page of LJMU holiday requests" href="home.html" accesskey="l">Home</a></li>
+	<li><a title = "List of holiday requests" href="index.html" accesskey="i">Requests</a></li>
+	<li><a title  = "Add a new holiday request to the system" href="new.html" accesskey="n">Add Request</a></li>
+	<li><a title = "Edit a holiday request" href="edit.html" accesskey="e">Edit Request</a></li>
+	<li><a title = "Show an individual request of the system" href="show.html" accesskey="s">Show Request</a></li>
 	</ul>
   </div>
-  <div id="leftcolumn"><img src="images/ljmu.png" width="165" height="165" alt="LJMULogo" title="LJMU Logo">
-  <div class="contactinfo"><h2>LJMU Contact Information</h2>
-	<p>Telephone Number: 0151 231 2121</p>
-	<p>Other contact information is available on the <a href=	"http://www.ljmu.ac.uk/help.htm">LJMU</a> website</p></div></div>
-  <div id="maincolumn">
-  <h1>Holiday request information</h1>
   
-  <table border="1">
+  <!--The navigation code shows each link and their individual access keys. Modifying the title of each link will also display in the browser when hovered over the link. -->
+  
+  <div id="leftcolumn"><img src="images/ljmu.png" width="165" height="165" alt="LJMULogo" title="LJMU Logo">
+  <div class="contactinfo"><h1>LJMU Contact Information</h1>
+	<p>Telephone Number: 0151 231 2121</p>
+	<p>Other contact information is available on the <a title ="LJMU Contact Information" href="http://www.ljmu.ac.uk/help.htm">LJMU</a> website</p></div>
+    </div>
+    
+    <!-- The left column encloses the LJMU logo and the contact information about LJMU. The hyperlink will take the user to the LJMU contact page. -->
+    
+  <div id="maincolumn">
+  
+  <h1>Holiday request information</h1>
+  <br>
+  <p>Below is information on the holiday request you selected.</p>
+  <br>
+   <table border = "1" cellpadding = "5" rules="groups" frame="box">
+   
+   <thead>
+  <tr> 
+  <th>Name</th> <th>Amount of days</th> <th>Start date</th> <th>Return to work</th> <th>Authorised?</th> <th>Record Info</th></tr>
+  </thead>
+  
+  <tr>
+  <td>Antony Shimmin</td> <td>2</td> <td>02/11/11</td> <td>05/11/11</td><td><input type="checkbox" name="authorised" value="yesorno" disabled ="disabled" checked = "checked"></td> <td><a title = "Edit Record" href = "edit.html">Edit Record</a></td>
+  </tr>
+  
   </table>
+  
   </div>
+  
+  <!-- The above coce shows what would be the individually selected record and whether or not it has been authorised. It also includes a link to edit the record. -->
+  
   <div id="rightcolumn"> 
+  
   <div class="snimages">
   <a href="http://www.ljmu.ac.uk/staff"><img src="images/LJMU1.png" width="55" height="55" alt="LJMUSocialNetwork" title="LJMU Staff"></a>
     <a href="http://www.youtube.com/LJMUTV"><img src="images/youtube.png" width="55" height="55" alt="YoutubeSocialNetwork" title="LJMU Youtube"></a>
     <a href="http://www.facebook.com/liverpooljohnmooresuniversity"><img src="images/facebook.png" width="55" height="55" alt="FacebookSocialNetwork" title="LJMU Facebook"></a>
     <a href="http://twitter.com/#!/ljmu"><img src="images/twitter.png" width="55" height="55" alt="TwitterSocialNetwork" title="LJMU Twitter"></a>
 	</div>
+    
   <div class="socialnetwork">
-  <h2>Social Networking</h2>
+  <h1>Social Networking</h1>
   <p>You can find LJMU on the above social networking websites or return to the LJMU Website.</p></div>
   </div>
-  <div id="footer">
-  <div class="info"><li><ul><a href="home.html">Home</a></li>
-	<li><a href="index.html">Requests</a></li>
-	<li><a href="new.html">Add Request</a></li>
-	<li><a href="edit.html">Edit Request</a></li>
-	<li><a href="show.html">Show Request</a></li></ul>
-    <p>Copyright LJMU. All Rights Reserved.</p>
-  </div>
   
-  </div>
+  <!-- The right column contains the images linked to the various LJMU social networks. -->
+  
+  <div id="footer">
+	
+<p>Copyright LJMU. All Rights Reserved.
+
+    <a href="http://validator.w3.org/check?uri=referer"><img
+      src="http://www.w3.org/Icons/valid-html401" alt="Valid HTML 4.01 Transitional" title="HTML 4.01 Transitional Validation Proof" height="31" width="88"></a>
+      
+      <a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!" title="CSS 2.1 Validation Proof">
+</a>
+  </p>
+
+  	</div>
+    
+    <!-- The footer contains the copyright information of the website and the images that prove the website is html and css validated. -->
+  
+  
 </div>
 
 </body>

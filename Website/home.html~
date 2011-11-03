@@ -2,8 +2,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>LJMU Holiday Request System - Add Record</title>
-<link href="styles/mystyles.css" rel="stylesheet" type="text/css">
+<title>LJMU Holiday Request System</title>
+<link href="mystyles.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -26,7 +26,6 @@
   <!--The navigation code shows each link and their individual access keys. Modifying the title of each link will also display in the browser when hovered over the link. -->
   
   <div id="leftcolumn"><img src="images/ljmu.png" width="165" height="165" alt="LJMULogo" title="LJMU Logo">
-  
   <div class="contactinfo"><h1>LJMU Contact Information</h1>
 	<p>Telephone Number: 0151 231 2121</p>
 	<p>Other contact information is available on the <a title ="LJMU Contact Information" href="http://www.ljmu.ac.uk/help.htm">LJMU</a> website</p></div>
@@ -34,46 +33,27 @@
     
     <!-- The left column encloses the LJMU logo and the contact information about LJMU. The hyperlink will take the user to the LJMU contact page. -->
     
-  <div id="maincolumn">
-  
-  <h1>Adding a request</h1>
-  <br>
-  <p>To add a request please fill in the required fields below for that request to be added to the system for consideration.</p>
-  <br>
-  
-  <div class ="form">
-  <form action="index.html" method="post" name="add">
-  
-  <label for="name">Name:</label>
-  <input type="text" name="name" disabled="disabled" value= "Antony Shimmin" id="name">
-  
-  <br><br>
-  
-  <label for="days">Amount of days:</label>
-  <input type="text" name="amount" id="days" accesskey ="a">
-  
-  <br><br>
-  
-  <label for="startdate">Start Date:</label>
-  <input type="text" name="start" id="startdate" accesskey="d">
-  
-  <br><br>
-  
-  <label for="returndate">Return Date:</label>
-  <input type="text" name="return" id="returndate" accesskey="r">
-  
-  <br><br>
-  
-  <input type="submit" name="button" value="Add" accesskey="b">
-  
-  
-  
+  <div id="maincolumn"><h1>Welcome to the LJMU holiday request system!</h1><br>
+  <p>This system is provided for staff members to use in their process of applying for holiday time off. To navigate around this system please use the navigation bar above.</p> <p>To add, edit or check the status of your request please login below.</p><br><br>
+  <div class="form">
+  <form action="index.html" method="post" name="login">
+    
+      <label for="username">Username:</label>
+      <input type="text" name="username" id="username" accesskey="u">
+    
+    	<br><br>
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" accesskey="p">
+    
+    	<br><br>
+      <input type="submit" name="button" id="button" value="Login" accesskey="b">
+    
   </form>
-  </div>
-  
-  <!-- The add page main column shows the form where the user can add a request. The add button would take the user back to the requests page. The form fields also contain their access keys. -->
   
   </div>
+  </div>
+  
+  <!-- The home page main column shows the login form for the user. The login button would take the user to the requests page. There are also access keys for the form fields. -->
   
   <div id="rightcolumn"> 
   
@@ -108,7 +88,7 @@
   	</div>
     
     <!-- The footer contains the copyright information of the website and the images that prove the website is html and css validated. -->
-  
+    
 </div>
 
 </body>

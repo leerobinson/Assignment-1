@@ -2,11 +2,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>LJMU Holiday Request System - Add Record</title>
-<link href="styles/mystyles.css" rel="stylesheet" type="text/css">
+<title>LJMU Holiday Request System - List of requests</title>
+<link href="mystyles.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
+
 <div id="container">
 
   <div id="header"><img src="images/ljmuheader.png" width="968" height="125" alt="LJMUHeader" title="LJMU Holiday Request System header"></div>
@@ -26,7 +27,6 @@
   <!--The navigation code shows each link and their individual access keys. Modifying the title of each link will also display in the browser when hovered over the link. -->
   
   <div id="leftcolumn"><img src="images/ljmu.png" width="165" height="165" alt="LJMULogo" title="LJMU Logo">
-  
   <div class="contactinfo"><h1>LJMU Contact Information</h1>
 	<p>Telephone Number: 0151 231 2121</p>
 	<p>Other contact information is available on the <a title ="LJMU Contact Information" href="http://www.ljmu.ac.uk/help.htm">LJMU</a> website</p></div>
@@ -36,44 +36,65 @@
     
   <div id="maincolumn">
   
-  <h1>Adding a request</h1>
-  <br>
-  <p>To add a request please fill in the required fields below for that request to be added to the system for consideration.</p>
-  <br>
+  <h1>List of holiday requests</h1>
   
-  <div class ="form">
-  <form action="index.html" method="post" name="add">
+  <table border = "1" cellpadding = "5" rules="groups" frame="box">
   
-  <label for="name">Name:</label>
-  <input type="text" name="name" disabled="disabled" value= "Antony Shimmin" id="name">
+  <thead>
+  <tr> 
+  <th>Name</th> <th>Amount of days</th> <th>Start date</th> <th>Return to work</th> <th>Record Info</th></tr>
+  </thead>
+   
+  <tbody>
+  <tr>
+  <td>Lee Robinson</td> <td>5</td> <td>24/10/11</td> <td>31/10/11</td> <td><a title = "Show Record" href = "show.html">Show Record</a></td>
+  </tr>
   
-  <br><br>
+  <tr>
+  <td>Antony Shimmin</td> <td>2</td> <td>02/11/11</td> <td>05/11/11</td> <td><a title = "Show Record" href = "show.html">Show Record</a></td>
+  </tr>
   
-  <label for="days">Amount of days:</label>
-  <input type="text" name="amount" id="days" accesskey ="a">
+  <tr>
+  <td>Lewis Strong</td> <td>4</td> <td>08/11/11</td> <td>14/11/11</td> <td><a title = "Show Record" href = "show.html">Show Record</a></td>
+  </tr>
   
-  <br><br>
+  <tr>
+  <td>Tom Elsworthy</td> <td>1</td> <td>15/11/11</td> <td>16/11/11</td> <td><a title = "Show Record" href = "show.html">Show Record</a></td>
+  </tr>
   
-  <label for="startdate">Start Date:</label>
-  <input type="text" name="start" id="startdate" accesskey="d">
+  <tr>
+  <td>Ant Keeley</td> <td>12</td> <td>21/11/11</td> <td>07/12/11</td> <td><a title = "Show Record" href = "show.html">Show Record</a></td>
+  </tr>
   
-  <br><br>
+  <tr>
+  <td>Tom Patterson</td> <td>2</td> <td>12/12/11</td> <td>14/12/11</td> <td><a title = "Show Record" href = "show.html">Show Record</a></td>
+  </tr>
   
-  <label for="returndate">Return Date:</label>
-  <input type="text" name="return" id="returndate" accesskey="r">
+  <tr>
+  <td>Matthew Lee</td> <td>4</td> <td>04/01/11</td> <td>10/01/11</td> <td><a title = "Show Record" href = "show.html">Show Record</a></td>
+  </tr>
   
-  <br><br>
+  <tr>
+  <td>Patryk Kot</td> <td>3</td> <td>13/01/11</td> <td>18/01/11</td> <td><a title = "Show Record" href = "show.html">Show Record</a></td>
+  </tr>
   
-  <input type="submit" name="button" value="Add" accesskey="b">
+  <tr>
+  <td>Mohammad Muradov</td> <td>3</td> <td>01/02/11</td> <td>06/02/11</td> <td><a title = "Show Record" href = "show.html">Show Record</a></td>
+  </tr>
+  
+  <tr>
+  <td>Craig Scott</td> <td>18</td> <td>09/02/11</td> <td>05/03/11</td> <td><a title = "Show Record" href = "show.html">Show Record</a></td>
+  </tr>
   
   
+  </tbody>
   
-  </form>
+  
+  </table>
+  
   </div>
   
-  <!-- The add page main column shows the form where the user can add a request. The add button would take the user back to the requests page. The form fields also contain their access keys. -->
-  
-  </div>
+  <!-- The main column on this page shows the requests that have been made by each individual. Each request has a link to the show page. -->
   
   <div id="rightcolumn"> 
   
@@ -108,7 +129,7 @@
   	</div>
     
     <!-- The footer contains the copyright information of the website and the images that prove the website is html and css validated. -->
-  
+    
 </div>
 
 </body>

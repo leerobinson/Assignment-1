@@ -2,8 +2,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>LJMU Holiday Request System - Add Record</title>
-<link href="styles/mystyles.css" rel="stylesheet" type="text/css">
+<title>LJMU Holiday Request System - Edit Record</title>
+<link href="mystyles.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -26,7 +26,6 @@
   <!--The navigation code shows each link and their individual access keys. Modifying the title of each link will also display in the browser when hovered over the link. -->
   
   <div id="leftcolumn"><img src="images/ljmu.png" width="165" height="165" alt="LJMULogo" title="LJMU Logo">
-  
   <div class="contactinfo"><h1>LJMU Contact Information</h1>
 	<p>Telephone Number: 0151 231 2121</p>
 	<p>Other contact information is available on the <a title ="LJMU Contact Information" href="http://www.ljmu.ac.uk/help.htm">LJMU</a> website</p></div>
@@ -34,15 +33,13 @@
     
     <!-- The left column encloses the LJMU logo and the contact information about LJMU. The hyperlink will take the user to the LJMU contact page. -->
     
-  <div id="maincolumn">
+  <div id="maincolumn"><h1>Edit Information</h1><br>
   
-  <h1>Adding a request</h1>
-  <br>
-  <p>To add a request please fill in the required fields below for that request to be added to the system for consideration.</p>
-  <br>
+  <p>Edit the information regarding your record below.</p><br>
   
-  <div class ="form">
-  <form action="index.html" method="post" name="add">
+  <div class="form">
+  <form action="show.html" method="post" name="edit">
+
   
   <label for="name">Name:</label>
   <input type="text" name="name" disabled="disabled" value= "Antony Shimmin" id="name">
@@ -50,30 +47,28 @@
   <br><br>
   
   <label for="days">Amount of days:</label>
-  <input type="text" name="amount" id="days" accesskey ="a">
+  <input type="text" name="amount" value="2" id="days" accesskey="a">
   
   <br><br>
   
   <label for="startdate">Start Date:</label>
-  <input type="text" name="start" id="startdate" accesskey="d">
+  <input type="text" name="start" value="02/11/11" id="startdate" accesskey="d">
   
   <br><br>
   
   <label for="returndate">Return Date:</label>
-  <input type="text" name="return" id="returndate" accesskey="r">
+  <input type="text" name="return" value="05/11/11" id="returndate" accesskey="r">
   
   <br><br>
   
-  <input type="submit" name="button" value="Add" accesskey="b">
-  
+  <input type="submit" name="button" id="button" value="Edit" accesskey="b">
   
   
   </form>
   </div>
-  
-  <!-- The add page main column shows the form where the user can add a request. The add button would take the user back to the requests page. The form fields also contain their access keys. -->
-  
   </div>
+  
+  <!-- The main column on this page shows the potential editting of the record on the form. The edit button would return the user to the show page. The form fields also contain their access keys. -->
   
   <div id="rightcolumn"> 
   
@@ -108,6 +103,7 @@
   	</div>
     
     <!-- The footer contains the copyright information of the website and the images that prove the website is html and css validated. -->
+  
   
 </div>
 
