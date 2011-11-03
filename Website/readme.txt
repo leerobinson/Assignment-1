@@ -1,5 +1,7 @@
 This readme file is for the LJMU Holiday Request System website that has been created by Lee Robinson.
 
+When navigating through the website there are certain areas which are suitable for the director and certain areas suitable for the user. Following the initial logon the list of requests will be shown which is suitable for both however more suitable for the director. The requests page has a link to the show page which is more suitable for the user as when on the show page they can view if their request has been authorised or not. The add and edit pages are suitable for the users because of the nature of the system i.e. the user is the one adding or editing the requests.
+
 There are 5 webpages called; index.html, requests.html, new.html, edit.html and show.html
 
 Each webpage contains navigation to all of the webpages. Each webpage contains alt tags for images. Each webpage has been commented as has the CSS file.
