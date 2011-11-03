@@ -36,7 +36,7 @@
   <div id="maincolumn"><h1>Welcome to the LJMU holiday request system!</h1><br>
   <p>This system is provided for staff members to use in their process of applying for holiday time off. To navigate around this system please use the navigation bar above.</p> <p>To add, edit or check the status of your request please login below.</p><br><br>
   <div class="form">
-  <form action="requests.html" method="post" name="login">
+  <form action="index.html" method="post" name="login">
     
       <label for="username">Username:</label>
       <input type="text" name="username" id="username" accesskey="u">
